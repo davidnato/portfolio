@@ -2,6 +2,11 @@
 <head>
 <title>Contact Me </title>
 <link rel="stylesheet" href="style.css">
+  <script>
+  function showAlert() {
+    alert("Are you sure you want to submit the form?");
+  }
+</script>
 </head>
 <body>
 <header>
@@ -37,7 +42,7 @@
   <label for="message">Message:</label>
   <textarea id="message" name="message" rows="5" required></textarea>
 
-  <input type="submit" value="Submit">
+<input type="submit" value="Submit" onclick="showAlert()">
 </form>
 <footer>
 <p> David Wanyama Nato</p>
